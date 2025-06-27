@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation - Tahaseena & RD Siddiq</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Amiri", serif;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem;
+        color: #222;
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)
+          ),
+          url("https://cdn.pixabay.com/photo/2025/04/22/16/55/clouds-9550639_1280.jpg")
+            no-repeat center center fixed;
+        background-size: cover;
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.97);
+        padding: 3rem;
+        border: 10px solid #8b0000;
+        border-radius: 25px;
+        max-width: 850px;
+        width: 100%;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        font-weight: bold;
+        animation: fadeIn 2s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .bismillah {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        color: #2e8b57;
+        animation: fadeIn 2s ease-in;
+      }
+      .ayah {
+        font-size: 1.6rem;
+        color: #4b0082;
+        margin: 1rem 0;
+      }
+      .meaning {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: #555;
+        margin-bottom: 2rem;
+        font-weight: normal;
+        max-width: 600px;
+      }
+      h1 {
+        font-size: 2.8rem;
+        color: #8b0000;
+        margin-bottom: 1rem;
+      }
+      .details {
+        font-size: 1.3rem;
+        margin: 1.5rem 0;
+        line-height: 1.6;
+      }
+      .map-text {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+      }
+      .map-text a {
+        display: inline-block;
+        background-color: #f8f8f8;
+        padding: 14px 24px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: #8b0000;
+        font-weight: bold;
+      }
+      .map-text a:hover {
+        background-color: #f3e9e9;
+        transform: scale(1.05);
+      }
+      .countdown {
+        margin-top: 2.5rem;
+        font-size: 1.4rem;
+        color: #fff;
+        background: linear-gradient(to right, #8b0000, #a94442);
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        display: inline-block;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+      .countdown span {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .contact {
+        margin-top: 3rem;
+        font-size: 1.1rem;
+        color: #222;
+      }
+      .footer {
+        margin-top: 2.5rem;
+        font-size: 1rem;
+        font-style: italic;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source
+        src="https://www.islamcan.com/audio/nasheeds/ya-taiba.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+      <div class="bismillah">بِسْمِ ٱللّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="ayah">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+        لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+      </div>
+      <div class="meaning">
+        "And among His signs is that He created for you spouses from among
+        yourselves so that you may find tranquility in them, and He placed
+        between you affection and mercy..." <br />
+        — Surah Ar-Rum (30:21)
+      </div>
+      <h1>Tahaseena Banu weds RD Siddiq</h1>
+      <div class="details">
+        Nikah & Valima Ceremony<br />
+        On Sunday, 29 June 2025 at 12:30 PM<br />
+        At Samatha Resort, Hospet Road, Harapanahalli
+      </div>
+      <div class="map-text">
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=14.818825,75.9988834&travelmode=driving"
+          target="_blank"
+        >
+          Open Location in Google Maps
+        </a>
+      </div>
+      <div class="countdown">Time remaining: <span id="timer"></span></div>
+      <div class="contact">
+        <p><strong>For More Information:</strong></p>
+        <p>Ansar Beig: 9380748526</p>
+        <p>Thaheer Beig: 9019577007</p>
+        <p>RD Akbar: 9035910577</p>
+      </div>
+      <div class="footer">
+        With love and duas, we welcome you to join our celebration ♥️
+      </div>
+    </div>
+    <script>
+      const countdown = () => {
+        const weddingDate = new Date("June 29, 2025 12:30:00").getTime();
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById(
+          "timer"
+        ).innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      };
+      setInterval(countdown, 1000);
+    </script>
+    <div
+      style="
+        position: fixed;
+        bottom: 10px;
+        right: 15px;
+        font-size: 0.9rem;
+        color: #666;
+        font-style: italic;
+      "
+    >
+      Created by Thaheer
+    </div>
+  </body>
+</html>
